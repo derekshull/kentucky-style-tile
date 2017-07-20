@@ -2,11 +2,6 @@
 	<div id="app">
 		<header>
 			<button class="js-menu-show header__menu-toggle material-icons" title="open the navigation menu">menu</button>
-			<div class="nav-right">
-				<router-link class="logo-link" to="/">
-					<span class="logo-name">Style Guide</span> 
-				</router-link>
-			</div>
 		</header>
 
 		<aside class="js-side-nav side-nav">
@@ -39,17 +34,65 @@
 
 <style lang="scss">
 	/* Background pattern from Subtle Patterns */
+
+	$color1: rgb(95, 11, 63);
+	$color2: rgb(154, 6, 32);
+	$color3: rgb(227, 100, 21);
+	$color4: rgb(85, 65, 56);
+	$color5: rgb(17, 76, 92);
+
+	@font-face {
+		font-family: 'mathleteskinny';
+		src: url('/static/Mathlete-Skinny-webfont.eot');
+		src: url('/static/Mathlete-Skinny-webfont.eot?#iefix') format('embedded-opentype'),
+			url('/static/Mathlete-Skinny-webfont.woff') format('woff'),
+			url('/static/Mathlete-Skinny-webfont.ttf') format('truetype'),
+			url('/static/Mathlete-Skinny-webfont.svg#mathleteskinny') format('svg');
+		font-weight: normal;
+		font-style: normal;
+	}
+
 	html, body {
 		padding:0;
 		margin:0;
-		font-family: "Avenir", "Helvetica Neue", Helvetica, Arial, sans-serif;
+		font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 		-webkit-font-smoothing: antialiased;
 		-moz-osx-font-smoothing: grayscale;
-		color: #212121;
+		color: #383838;
+		font-size:16px;
+		line-height:30px;
 	}
 
 	* {
 		box-sizing: border-box;
+	}
+
+	h1 {
+		font-size: 67px;
+		margin: 15px 0px 5px;
+		font-family: "mathleteskinny", Helvetica;
+		color: $color5;
+		font-weight: 100;
+		line-height:50px;
+	}
+
+	h2 {
+		font-size: 26px;
+		margin: 8px 0px;
+		color: #77716d;
+		font-family: 'Julius Sans One', "Helvetica Neue", Helvetica, Arial, sans-serif;
+		font-weight:200;
+	}
+
+	h3 {
+		font-size: 26px;
+		margin: 10px 0px;
+		color: rgb(141, 0, 0);
+	}
+
+	h4 {
+		font-size: 22px;
+		margin: 5px 0px;
 	}
 
 	.nav-right {
@@ -100,9 +143,8 @@
 	header {
 		width: 100%;
 		height: 56px;
-		box-shadow: 0 2px 4px rgba(0,0,0,0.4);
-		background: #333;
-		color: #FFF;
+		background: #f6f2f1;
+		color: black;
 		display: flex;
 		flex-direction: row;
 		align-items: center;
@@ -115,7 +157,7 @@
 		height: 50px;
 		padding: 0;
 		margin: 0;
-		color: #FFF;
+		color: black;
 	}
 
 	.side-nav {
@@ -352,25 +394,5 @@
 		.card {
 			width: calc(100% / 3);
 		}
-	}
-
-	h1 {
-		font-size: 38px;
-		margin: 10px 0px;
-	}
-
-	h2 {
-		font-size: 30px;
-		margin: 10px 0px;
-	}
-
-	h3 {
-		font-size: 26px;
-		margin: 10px 0px;
-	}
-
-	h4 {
-		font-size: 22px;
-		margin: 5px 0px;
 	}
 </style>
