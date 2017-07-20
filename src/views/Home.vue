@@ -466,7 +466,7 @@
 			}
 
 			.color-strip {
-				height: 12px;
+				height: 14px;
 				position: absolute;
 				bottom: 0px;
 				width:100%;
