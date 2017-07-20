@@ -434,6 +434,11 @@
 			img {
 				max-width:280px;
 				position:relative;
+				transition: transform 0.3s;
+			}
+
+			&:hover img {
+				transform: scale(1.1);
 			}
 
 			.overlay {
